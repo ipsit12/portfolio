@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,4 +20,7 @@ use App\Http\Controllers\FrontendController;
 
 
 Route::get('/',[FrontendController::class,'index']);
+Route::post('/post',[ContactController::class,'post']);
+Route::get('/secretcontactshow',[ContactController::class,'secretcontactshow']);
+Route::get('/secretcontactdelte/{id}',[ContactController::class,'secretcontactdelte']);
 Route::get('/portfolio',[FrontendController::class,'portfolio']);

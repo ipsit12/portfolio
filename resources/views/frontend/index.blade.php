@@ -34,10 +34,11 @@
     <div class="container">
       <a class='navbar-brand' href='index.html'>
         <span class="logo-light-mode">
-          <img src="asset/images/logo-light.png" class="l-light" alt="">
-          <img src="asset/images/logo-dark.png" class="l-dark" alt="">
+          <!-- <img src="asset/images/logo-light.png" class="l-light" alt="">
+          <img src="asset/images/logo-dark.png" class="l-dark" alt=""> -->
+          <h3 class="text-white"><b>Ipsita</b></h3>
         </span>
-        <img src="asset/images/logo-light.png" class="logo-dark-mode" alt="">
+        <h3 class="text-black"><b>Ipsita</b></h3>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,10 +89,10 @@
               </span>
               <span id="typed"></span>
             </h1>
-            <h4 class="typed-heading mt-4">A Best Digital Product Design</h4>
-            <p class="text-white para-desc mx-auto mb-0 mt-3" style="--bs-text-opacity: .8;">
+            <h4 class="typed-heading mt-4">A Best Digital Product Designer and Developer</h4>
+            <!-- <p class="text-white para-desc mx-auto mb-0 mt-3" style="--bs-text-opacity: .8;">
               This is just a simple text made for this unique and awesome template, you can replace it with any text.
-            </p>
+            </p> -->
 
             <a href="javascript:void(0)" class="btn btn-primary rounded-pill mt-5 text-capitalize">
               view my works
@@ -1006,7 +1007,8 @@
 
         <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6">
           <div class="contact-right mt-md-0 mt-3">
-            <form id="contact-form">
+            <form id="contact-form" method="post" action="/post">
+              @csrf
               <div class="row">
                 <div class="col-lg-6">
                   <div class="mb-3">
@@ -1025,8 +1027,8 @@
 
                 <div class="col-lg-12">
                   <div class="mb-3">
-                    <label class="form-label">Subject</label>
-                    <input type="text" class="form-control rounded" placeholder="Your Subject" name="email"
+                    <label class="form-label">Phone</label>
+                    <input type="text" class="form-control rounded" placeholder="Your Phone" name="phone"
                       id="form_subject">
                   </div>
                 </div>
